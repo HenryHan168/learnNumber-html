@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用戶反饋 - LearnNumber</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .feedback-hero {
+            background: linear-gradient(135deg, var(--light-color) 0%, #fff 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .feedback-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .feedback-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .feedback-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+        
+        .form-container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group small {
+            display: block;
+            margin-top: 0.5rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .btn-submit {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            background-color: #3a5fe0;
+        }
+        
+        .faq-section {
+            background-color: var(--light-color);
+            padding: 4rem 2rem;
+        }
+        
+        .faq-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .toggle {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .toggle {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LearnNumber</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="product.html">功能介紹</a></li>
+                <li><a href="feedback.html" class="active">用戶反饋</a></li>
+                <li><a href="download.html">立即下載</a></li>
+                <li><a href="privacy.html">隱私政策</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback-hero">
+            <div class="container">
+                <h1>您的意見，我們的進步</h1>
+                <p>我們非常重視每一位用戶的反饋和建議。您的寶貴意見將幫助我們不斷改進 LearnNumber，為孩子們提供更好的數學學習體驗！</p>
+            </div>
+        </section>
+
+        <section class="feedback-form">
+            <div class="form-container">
+                <h2>分享您的反饋</h2>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子郵件</label>
+                        <input type="email" id="email" name="email" required>
+                        <small>我們不會公開您的電子郵件地址</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">反饋類型</label>
+                        <select id="category" name="category" required>
+                            <option value="">請選擇一個選項</option>
+                            <option value="bug">問題回報</option>
+                            <option value="suggestion">功能建議</option>
+                            <option value="content">內容反饋</option>
+                            <option value="experience">使用體驗</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">您的反饋</label>
+                        <textarea id="feedback" name="feedback" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">您對 LearnNumber 的評分</label>
+                        <select id="rating" name="rating">
+                            <option value="5">非常滿意 (5分)</option>
+                            <option value="4">滿意 (4分)</option>
+                            <option value="3">一般 (3分)</option>
+                            <option value="2">不滿意 (2分)</option>
+                            <option value="1">非常不滿意 (1分)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">提交反饋</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>常見問題</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>LearnNumber 適合哪個年齡段的孩子使用？</h3>
+                        <div class="toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LearnNumber 主要設計給 4-10 歲的孩子使用。我們有不同難度的內容，從基礎數字認知到進階的數學運算，可以根據孩子的實際水平選擇合適的內容。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何查看孩子的學習進度和報告？</h3>
+                        <div class="toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>在應用中，點擊底部導航欄的「進度」圖標，即可查看詳細的學習報告。您可以看到學習時間、完成的練習數量、正確率等數據，還有易錯題分析和學習建議。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>LearnNumber 需要付費嗎？</h3>
+                        <div class="toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LearnNumber 提供免費版和付費版。免費版包含基礎的數字認知和簡單計算內容，已經足夠初學者使用。付費版解鎖全部高級內容，包括更多互動遊戲、挑戰模式和個性化學習路徑。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>應用需要網絡連接嗎？</h3>
+                        <div class="toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>大部分基礎功能可以在離線狀態下使用。不過，某些功能如同步學習進度、獲取最新內容和更新等需要網絡連接。我們建議在有網絡的環境下使用，以獲得最佳體驗。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何刪除應用中的個人數據？</h3>
+                        <div class="toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>在應用的「設置」-「賬戶」-「數據管理」中，您可以選擇刪除學習數據或完全刪除賬戶。如果您有其他問題，可以聯繫我們的客服郵箱 support@learnnumber.com。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>LearnNumber</h2>
+                <p>© 2025 LearnNumber. 保留所有權利。</p>
+            </div>
+            <div class="footer-links">
+                <h3>快速連結</h3>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="product.html">功能介紹</a></li>
+                    <li><a href="feedback.html">用戶反饋</a></li>
+                    <li><a href="download.html">立即下載</a></li>
+                    <li><a href="privacy.html">隱私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>聯絡我們</h3>
+                <p><i class="fas fa-envelope"></i> support@learnnumber.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Form Submission
+            const form = document.getElementById('feedbackForm');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real site, this would send the form data to a server
+                alert('感謝您的反饋！我們已收到您的意見，並將認真考慮。');
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html> 

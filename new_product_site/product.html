@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>功能介紹 - LearnNumber</title>
+    <title data-i18n="product_title">功能介紹 - LearnNumber</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,11 +14,26 @@
                 <h1>LearnNumber</h1>
             </div>
             <ul class="nav-links">
+<<<<<<< HEAD
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="product.html" class="active">功能介紹</a></li>
                 <li><a href="feedback.html">用戶反饋</a></li>
                 <!--<li><a href="download.html">立即下載</a></li>-->
                 <li><a href="privacy.html">隱私政策</a></li>
+=======
+                <li><a href="index.html" data-i18n="home">首頁</a></li>
+                <li><a href="product.html" class="active" data-i18n="features">功能介紹</a></li>
+                <li><a href="feedback.html" data-i18n="feedback">用戶反饋</a></li>
+                <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                <li><a href="privacy.html" data-i18n="privacy">隱私政策</a></li>
+                <li class="language-item">
+                    <select class="language-selector">
+                        <option value="zh-TW">繁體中文</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -29,18 +44,18 @@
     <main>
         <section class="product-hero">
             <div class="container">
-                <h1>LearnNumber - 有趣易用的數字學習應用</h1>
-                <p class="subheading">寓教於樂，讓孩子愛上數學，啟發數學天賦</p>
+                <h1 data-i18n="product_title">LearnNumber - 有趣易用的數字學習應用</h1>
+                <p class="subheading" data-i18n="product_subtitle">寓教於樂，讓孩子愛上數學，啟發數學天賦</p>
             </div>
         </section>
 
         <section class="product-feature" id="interactive-learning">
             <div class="container">
                 <div class="feature-content">
-                    <h2><i class="fas fa-gamepad"></i> 互動學習遊戲</h2>
+                    <h2><i class="fas fa-gamepad"></i> <span data-i18n="feature_1_title">互動學習遊戲</span></h2>
                     <ul class="feature-list">
                         <li>
-                            <h3>數字認知遊戲</h3>
+                            <h3 data-i18n="feature_1_desc">數字認知遊戲</h3>
                             <p>通過有趣的互動方式，幫助孩子認識數字形狀、發音和數量概念。生動的動畫和聲音效果，增強學習體驗和記憶效果。</p>
                         </li>
                         <li>
@@ -65,7 +80,7 @@
                     <img src="images/progress-tracking.png" alt="進度追蹤功能展示">
                 </div>
                 <div class="feature-content">
-                    <h2><i class="fas fa-chart-line"></i> 進度追蹤</h2>
+                    <h2><i class="fas fa-chart-line"></i> <span data-i18n="feature_2_title">進度追蹤</span></h2>
                     <ul class="feature-list">
                         <li>
                             <h3>詳細學習報告</h3>
@@ -91,7 +106,7 @@
         <section class="product-feature" id="staged-learning">
             <div class="container">
                 <div class="feature-content">
-                    <h2><i class="fas fa-graduation-cap"></i> 階段式學習</h2>
+                    <h2><i class="fas fa-graduation-cap"></i> <span data-i18n="feature_3_title">階段式學習</span></h2>
                     <ul class="feature-list">
                         <li>
                             <h3>科學的學習路徑</h3>
@@ -116,7 +131,7 @@
                     <img src="images/personalization.png" alt="個性化學習功能展示">
                 </div>
                 <div class="feature-content">
-                    <h2><i class="fas fa-cog"></i> 個性化學習</h2>
+                    <h2><i class="fas fa-cog"></i> <span data-i18n="feature_4_title">個性化學習</span></h2>
                     <ul class="feature-list">
                         <li>
                             <h3>智能難度調整</h3>
@@ -150,11 +165,12 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>LearnNumber</h2>
-                <p>© 2025 LearnNumber. 保留所有權利。</p>
+                <p data-i18n="footer_rights">© 2025 LearnNumber. 保留所有權利。</p>
             </div>
             <div class="footer-links">
-                <h3>快速連結</h3>
+                <h3 data-i18n="quick_links">快速連結</h3>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="index.html">首頁</a></li>
                     <li><a href="product.html">功能介紹</a></li>
                     <li><a href="feedback.html">用戶反饋</a></li>
@@ -166,6 +182,19 @@
                 <h3>聯絡我們</h3>
                 <p><i class="fas fa-envelope"></i> sphere889889@gmail.com</p>
                 <div class="social-icons" style="display: none;">
+=======
+                    <li><a href="index.html" data-i18n="home">首頁</a></li>
+                    <li><a href="product.html" data-i18n="features">功能介紹</a></li>
+                    <li><a href="feedback.html" data-i18n="feedback">用戶反饋</a></li>
+                    <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                    <li><a href="privacy.html" data-i18n="privacy">隱私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="contact_us">聯絡我們</h3>
+                <p><i class="fas fa-envelope"></i> support@learnnumber.com</p>
+                <div class="social-icons">
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -174,6 +203,8 @@
         </div>
     </footer>
 
+    <script src="js/languages.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html> 

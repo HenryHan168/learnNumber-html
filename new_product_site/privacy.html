@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱私政策 - LearnNumber</title>
+    <title data-i18n="privacy_title">隱私政策 - LearnNumber</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -112,11 +112,26 @@
                 <h1>LearnNumber</h1>
             </div>
             <ul class="nav-links">
+<<<<<<< HEAD
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="product.html">功能介紹</a></li>
                 <li><a href="feedback.html">用戶反饋</a></li>
                 <!--<li><a href="download.html">立即下載</a></li>-->
                 <li><a href="privacy.html" class="active">隱私政策</a></li>
+=======
+                <li><a href="index.html" data-i18n="home">首頁</a></li>
+                <li><a href="product.html" data-i18n="features">功能介紹</a></li>
+                <li><a href="feedback.html" data-i18n="feedback">用戶反饋</a></li>
+                <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                <li><a href="privacy.html" class="active" data-i18n="privacy">隱私政策</a></li>
+                <li class="language-item">
+                    <select class="language-selector">
+                        <option value="zh-TW">繁體中文</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -127,8 +142,13 @@
     <main>
         <section class="privacy-hero">
             <div class="container">
+<<<<<<< HEAD
                 <h1>隱私政策</h1>
                 <p>LearnNumber 非常重視您和您孩子的隱私。本隱私政策說明了我們不會收集、使用、披露和保護您的個人信息。</p>
+=======
+                <h1 data-i18n="privacy_title">隱私政策</h1>
+                <p data-i18n="privacy_subtitle">LearnNumber 非常重視您和您孩子的隱私。本隱私政策說明了我們如何收集、使用、披露和保護您的個人信息。</p>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
             </div>
         </section>
 
@@ -162,19 +182,19 @@
                     <h3>個人信息</h3>
                     <p>當您註冊帳戶或使用我們的應用時，我們可能會收集：</p>
                     <ul>
-                        <li>聯繫信息（如家長/監護人的電子郵件地址）</li>
-                        <li>帳戶信息（如用戶名、密碼）</li>
-                        <li>孩子的年齡（用於提供適齡內容，但不會收集確切的出生日期）</li>
-                        <li>付款信息（如果您進行應用內購買）</li>
+                        <li data-i18n="privacy_collection_1">聯繫信息（如家長/監護人的電子郵件地址）</li>
+                        <li data-i18n="privacy_collection_2">帳戶信息（如用戶名、密碼）</li>
+                        <li data-i18n="privacy_collection_3">孩子的年齡（用於提供適齡內容，但不會收集確切的出生日期）</li>
+                        <li data-i18n="privacy_collection_4">付款信息（如果您進行應用內購買）</li>
                     </ul>
 
                     <h3>使用數據</h3>
                     <p>當您使用我們的應用時，我們會自動收集：</p>
                     <ul>
-                        <li>學習進度和表現數據（如完成的練習、正確率、學習時間）</li>
-                        <li>裝置信息（如裝置類型、操作系統版本）</li>
-                        <li>IP地址和一般位置數據</li>
-                        <li>應用使用統計數據（如功能使用情況、崩潰報告）</li>
+                        <li data-i18n="privacy_collection_5">學習進度和表現數據（如完成的練習、正確率、學習時間）</li>
+                        <li data-i18n="privacy_collection_6">裝置信息（如裝置類型、操作系統版本）</li>
+                        <li data-i18n="privacy_collection_7">IP地址和一般位置數據</li>
+                        <li data-i18n="privacy_collection_8">應用使用統計數據（如功能使用情況、崩潰報告）</li>
                     </ul>
                 </section>-->
 
@@ -182,15 +202,15 @@
                     <h2>信息使用方式</h2>
                     <p>我們使用收集的信息：</p>
                     <ul>
-                        <li>提供、維護和改進我們的應用和服務</li>
-                        <li>創建和維護您的帳戶</li>
-                        <li>追蹤學習進度和提供個性化學習體驗</li>
-                        <li>向家長/監護人提供學習報告和見解</li>
-                        <li>處理付款和管理訂閱</li>
-                        <li>發送重要通知（如關於我們服務的變更）</li>
-                        <li>響應您的問題和請求</li>
-                        <li>分析使用模式和優化用戶體驗</li>
-                        <li>保護我們的用戶和服務安全</li>
+                        <li data-i18n="privacy_usage_1">提供、維護和改進我們的應用和服務</li>
+                        <li data-i18n="privacy_usage_2">創建和維護您的帳戶</li>
+                        <li data-i18n="privacy_usage_3">追蹤學習進度和提供個性化學習體驗</li>
+                        <li data-i18n="privacy_usage_4">向家長/監護人提供學習報告和見解</li>
+                        <li data-i18n="privacy_usage_5">處理付款和管理訂閱</li>
+                        <li data-i18n="privacy_usage_6">發送重要通知（如關於我們服務的變更）</li>
+                        <li data-i18n="privacy_usage_7">響應您的問題和請求</li>
+                        <li data-i18n="privacy_usage_8">分析使用模式和優化用戶體驗</li>
+                        <li data-i18n="privacy_usage_9">保護我們的用戶和服務安全</li>
                     </ul>
                 </section>-->
 
@@ -201,19 +221,19 @@
                     <h3>服務提供商</h3>
                     <p>我們可能與幫助我們提供服務的第三方供應商共享信息，例如：</p>
                     <ul>
-                        <li>雲託管和存儲服務</li>
-                        <li>付款處理服務</li>
-                        <li>分析服務</li>
+                        <li data-i18n="privacy_sharing_1">雲託管和存儲服務</li>
+                        <li data-i18n="privacy_sharing_2">付款處理服務</li>
+                        <li data-i18n="privacy_sharing_3">分析服務</li>
                     </ul>
                     <p>這些服務提供商僅出於提供服務的目的處理您的信息，並受合同約束，禁止將此類信息用於任何其他目的。</p>
 
                     <h3>法律要求</h3>
                     <p>如果法律要求或為了：</p>
                     <ul>
-                        <li>遵守法律程序或法律要求</li>
-                        <li>保護我們的權利和財產</li>
-                        <li>防止欺詐或安全問題</li>
-                        <li>保護用戶或公眾的安全</li>
+                        <li data-i18n="privacy_sharing_4">遵守法律程序或法律要求</li>
+                        <li data-i18n="privacy_sharing_5">保護我們的權利和財產</li>
+                        <li data-i18n="privacy_sharing_6">防止欺詐或安全問題</li>
+                        <li data-i18n="privacy_sharing_7">保護用戶或公眾的安全</li>
                     </ul>
                     <p>我們可能會披露您的信息。</p>
 
@@ -228,10 +248,10 @@
                     <h2>數據安全</h2>
                     <p>我們實施了適當的技術和組織措施，以保護您的個人信息：</p>
                     <ul>
-                        <li>使用加密技術保護數據傳輸和儲存</li>
-                        <li>定期審查我們的數據收集、儲存和處理措施，防止未經授權的訪問</li>
-                        <li>限制有權訪問個人信息的員工數量，並要求他們遵守嚴格的保密義務</li>
-                        <li>定期備份數據以防止意外損失</li>
+                        <li data-i18n="privacy_protection_1">使用加密技術保護數據傳輸和儲存</li>
+                        <li data-i18n="privacy_protection_2">定期審查我們的數據收集、儲存和處理措施，防止未經授權的訪問</li>
+                        <li data-i18n="privacy_protection_3">限制有權訪問個人信息的員工數量，並要求他們遵守嚴格的保密義務</li>
+                        <li data-i18n="privacy_protection_4">定期備份數據以防止意外損失</li>
                     </ul>
                     <p>雖然我們努力保護您的信息，但請理解沒有任何安全措施是完美的或不可滲透的。如果您察覺到與我們服務相關的安全問題，請立即聯繫我們。</p>
                 </section>-->
@@ -247,12 +267,12 @@
                     <h2>您的權利</h2>
                     <p>根據您所在地區的法律，您可能享有以下權利：</p>
                     <ul>
-                        <li><strong>訪問權：</strong>要求訪問我們持有的您的個人信息副本。</li>
-                        <li><strong>修改權：</strong>要求更正不準確或不完整的個人信息。</li>
-                        <li><strong>刪除權：</strong>在某些情況下要求刪除您的個人信息。</li>
-                        <li><strong>限制處理權：</strong>在某些情況下要求限制我們處理您的個人信息。</li>
-                        <li><strong>數據可攜權：</strong>要求以結構化、常用和機器可讀的格式接收您的數據。</li>
-                        <li><strong>反對權：</strong>基於您的特定情況，反對我們處理您的個人信息。</li>
+                        <li data-i18n="privacy_rights_1"><strong>訪問權：</strong>要求訪問我們持有的您的個人信息副本。</li>
+                        <li data-i18n="privacy_rights_2"><strong>修改權：</strong>要求更正不準確或不完整的個人信息。</li>
+                        <li data-i18n="privacy_rights_3"><strong>刪除權：</strong>在某些情況下要求刪除您的個人信息。</li>
+                        <li data-i18n="privacy_rights_4"><strong>限制處理權：</strong>在某些情況下要求限制我們處理您的個人信息。</li>
+                        <li data-i18n="privacy_rights_5"><strong>數據可攜權：</strong>要求以結構化、常用和機器可讀的格式接收您的數據。</li>
+                        <li data-i18n="privacy_rights_6"><strong>反對權：</strong>基於您的特定情況，反對我們處理您的個人信息。</li>
                     </ul>
                     <p>要行使上述任何權利，請通過下方的聯繫方式與我們聯絡。我們將根據適用法律處理您的請求。</p>
                 </section>-->
@@ -267,8 +287,13 @@
                 <section id="contact">
                     <h2>聯繫我們</h2>
                     <p>如果您對本隱私政策或我們的數據處理方式有任何問題、疑慮或請求，請通過以下方式聯繫我們：</p>
+<<<<<<< HEAD
                     <p><strong>電子郵件：</strong> sphere889889@gmail.com</p>
                     <!--<p><strong>郵寄地址：</strong> LearnNumber 隱私團隊，台北市信義區信義路五段7號</p>-->
+=======
+                    <p><i class="fas fa-envelope"></i> privacy@learnnumber.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> LearnNumber 隱私團隊，台北市信義區信義路五段7號</p>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
                     <p>我們將在收到您的請求後的合理時間內回覆。</p>
                 </section>
 
@@ -281,11 +306,12 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>LearnNumber</h2>
-                <p>© 2025 LearnNumber. 保留所有權利。</p>
+                <p data-i18n="footer_rights">© 2025 LearnNumber. 保留所有權利。</p>
             </div>
             <div class="footer-links">
-                <h3>快速連結</h3>
+                <h3 data-i18n="quick_links">快速連結</h3>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="index.html">首頁</a></li>
                     <li><a href="product.html">功能介紹</a></li>
                     <li><a href="feedback.html">用戶反饋</a></li>
@@ -297,6 +323,19 @@
                 <h3>聯絡我們</h3>
                 <p><i class="fas fa-envelope"></i> sphere889889@gmail.com</p>
                 <div class="social-icons" style="display: none;">
+=======
+                    <li><a href="index.html" data-i18n="home">首頁</a></li>
+                    <li><a href="product.html" data-i18n="features">功能介紹</a></li>
+                    <li><a href="feedback.html" data-i18n="feedback">用戶反饋</a></li>
+                    <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                    <li><a href="privacy.html" data-i18n="privacy">隱私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="contact_us">聯絡我們</h3>
+                <p><i class="fas fa-envelope"></i> support@learnnumber.com</p>
+                <div class="social-icons">
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -305,6 +344,8 @@
         </div>
     </footer>
 
+    <script src="js/languages.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/script.js"></script>
     <script>
         // 側邊欄導航功能

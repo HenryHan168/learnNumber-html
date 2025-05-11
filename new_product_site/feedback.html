@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用戶反饋 - LearnNumber</title>
+    <title data-i18n="feedback_title">用戶反饋 - LearnNumber</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -162,11 +162,26 @@
                 <h1>LearnNumber</h1>
             </div>
             <ul class="nav-links">
+<<<<<<< HEAD
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="product.html">功能介紹</a></li>
                 <li><a href="feedback.html" class="active">用戶反饋</a></li>
                 <!--<li><a href="download.html">立即下載</a></li>-->
                 <li><a href="privacy.html">隱私政策</a></li>
+=======
+                <li><a href="index.html" data-i18n="home">首頁</a></li>
+                <li><a href="product.html" data-i18n="features">功能介紹</a></li>
+                <li><a href="feedback.html" class="active" data-i18n="feedback">用戶反饋</a></li>
+                <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                <li><a href="privacy.html" data-i18n="privacy">隱私政策</a></li>
+                <li class="language-item">
+                    <select class="language-selector">
+                        <option value="zh-TW">繁體中文</option>
+                        <option value="zh-CN">简体中文</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -177,12 +192,73 @@
     <main>
         <section class="feedback-hero">
             <div class="container">
-                <h1>您的意見，我們的進步</h1>
-                <p>我們非常重視每一位用戶的反饋和建議。您的寶貴意見將幫助我們不斷改進 LearnNumber，為孩子們提供更好的數學學習體驗！</p>
+                <h1 data-i18n="feedback_title">用戶反饋</h1>
+                <p data-i18n="feedback_subtitle">聽聽家長和孩子們對 LearnNumber 的真實評價</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_1">我的孩子以前對數學很抗拒，自從使用了 LearnNumber 後，他開始主動要求學習數字。遊戲化的學習方式真的很有效！</p>
+                        <div class="testimonial-author">
+                            <img src="images/parent1.jpg" alt="家長照片">
+                            <div>
+                                <h4>王媽媽</h4>
+                                <p>5歲孩子的家長</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_2">LearnNumber 的進度追蹤功能讓我能清楚了解孩子的學習狀況，而且可以根據孩子的程度調整難度，非常貼心。</p>
+                        <div class="testimonial-author">
+                            <img src="images/parent2.jpg" alt="家長照片">
+                            <div>
+                                <h4>李爸爸</h4>
+                                <p>6歲孩子的家長</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text" data-i18n="testimonial_3">孩子很喜歡裡面的小遊戲，特別是數數和配對的遊戲。畫面很可愛，操作也很簡單，非常適合幼兒使用。</p>
+                        <div class="testimonial-author">
+                            <img src="images/parent3.jpg" alt="家長照片">
+                            <div>
+                                <h4>張媽媽</h4>
+                                <p>4歲孩子的家長</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="feedback-form">
+<<<<<<< HEAD
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd45OGMcGpqJQ6U1SVbNC1FdZhsNUiwJlkZ7YtLrzSNop-I2A/viewform?embedded=true" width="640" height="1306" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%; border: none;">載入中…</iframe>
         </section>
 
@@ -245,17 +321,49 @@
                 </div>
             </div>
         </section>
+=======
+            <div class="container">
+                <h2 data-i18n="share_feedback">分享您的使用體驗</h2>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="email">電子郵件</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating" data-i18n="rating">評分</label>
+                        <div class="rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback" data-i18n="feedback_content">反饋內容</label>
+                        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-i18n="submit">提交反饋</button>
+                </form>
+            </div>
+        </section>
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
                 <h2>LearnNumber</h2>
-                <p>© 2025 LearnNumber. 保留所有權利。</p>
+                <p data-i18n="footer_rights">© 2025 LearnNumber. 保留所有權利。</p>
             </div>
             <div class="footer-links">
-                <h3>快速連結</h3>
+                <h3 data-i18n="quick_links">快速連結</h3>
                 <ul>
+<<<<<<< HEAD
                     <li><a href="index.html">首頁</a></li>
                     <li><a href="product.html">功能介紹</a></li>
                     <li><a href="feedback.html">用戶反饋</a></li>
@@ -267,6 +375,19 @@
                 <h3>聯絡我們</h3>
                 <p><i class="fas fa-envelope"></i> sphere889889@gmail.com</p>
                 <div class="social-icons" style="display: none;">
+=======
+                    <li><a href="index.html" data-i18n="home">首頁</a></li>
+                    <li><a href="product.html" data-i18n="features">功能介紹</a></li>
+                    <li><a href="feedback.html" data-i18n="feedback">用戶反饋</a></li>
+                    <li><a href="download.html" data-i18n="download">立即下載</a></li>
+                    <li><a href="privacy.html" data-i18n="privacy">隱私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="contact_us">聯絡我們</h3>
+                <p><i class="fas fa-envelope"></i> support@learnnumber.com</p>
+                <div class="social-icons">
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -275,7 +396,10 @@
         </div>
     </footer>
 
+    <script src="js/languages.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/script.js"></script>
+<<<<<<< HEAD
     <script>
         // FAQ Toggle Functionality
         document.addEventListener('DOMContentLoaded', function() {
@@ -301,5 +425,7 @@
             // });
         });
     </script>
+=======
+>>>>>>> bee1624 (Refactor HTML files to support multilingual functionality by adding data-i18n attributes for translation, and implement a language selector in the navigation. Update CSS for language selector styling. Modify footer and header sections across multiple pages for consistency.)
 </body>
 </html> 
